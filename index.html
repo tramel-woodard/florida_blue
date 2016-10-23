@@ -21,9 +21,28 @@
             /* CORPORATE NAVIGATION */
             .container_corporate {
                 background: #FAFAFA;
-                color: #696969;
-                font-size: .9em;
+                color: #6D6D6D;
+                font-size: .85em;
                 font-weight: 300;
+            }
+            .container_corporate ul {
+                list-style-type: none;
+                padding-left: 0px;
+                margin-bottom: 0px;
+                vertical-align: middle;
+            }
+            .container_corporate li {
+                display: inline-block;
+            }
+            .container_corporate a {
+                color: #6D6D6D;
+                text-decoration: none;
+                display: block;
+                padding: 5px 0px;
+                margin-right: 20px;
+            }
+            .container_corporate a.active {
+                border-bottom: 3px solid #1477D7;
             }
             .corporate_menu {
                 display: inline-block;
@@ -131,8 +150,8 @@
         <div class="container-fluid container_corporate">
             <div class="row row_max_width">
                 <ul class="corporate_menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Members</a></li>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">Members <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
                     <li><a href="">Employers</a></li>
                     <li><a href="">Agents</a></li>
                     <li><a href="">Providers</a></li>
