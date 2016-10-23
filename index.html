@@ -35,6 +35,42 @@
             .row_action {
                 margin: 25px auto;
             }
+            .row_action div {
+                border-right: 1px solid #004766;
+            }
+            .row_action div:nth-child(1) {
+                padding-left: 0px;
+            }
+            .row_action div:nth-child(1) > ul {
+                padding-left: 0px;
+            }
+            .row_action ul {
+                list-style-type: none;
+            }
+            .row_action li {
+                font-size: .97em;
+                display: block;
+                margin-bottom: 10px;
+                clear: both;
+            }
+            .row_action a {
+                color: #FFF;
+                text-decoration: none;
+            }
+            .row_action a:hover {
+                color: #D1E7EE;
+            }
+            .row_action .title {
+                font-size: 1.1em;
+                margin-bottom: 15px;
+            }
+            .row_action .social {
+                border-right: none;
+            }
+            .row_action .social li {
+                display: inline-block;
+                margin-right: 20px;
+            }
             /* BOTTOM NAVIGATION */
             .container_bottom {
                 background: #004766;
@@ -87,16 +123,41 @@
         <div class="container-fluid container_action">
             <div class="row row_max_width row_action">
                 <div class="col-md-3 col-sm-6">
-                    column content
+                    <ul>
+                        <li class="title">Individuals and Families</li>
+                        <li><a href="">Tools and Resources</a></li>
+                        <li><a href="">How Insurance Works</a></li>
+                        <li><a href="">Pharmacy</a></li>
+                        <li><a href="">Glossary</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    column content
+                    <ul>
+                        <li class="title">Helpful Resources</li>
+                        <li><a href="">About Health Care Reform</a></li>
+                        <li><a href="">Find a Location</a></li>
+                        <li><a href="">Find an Agent</a></li>
+                        <li><a href="">Final Rate Determination</a></li>
+                        <li><a href="">Summary of Benefits</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    column content
+                    <ul>
+                        <li class="title">About Florida Blue</li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Florida Blue Foundation</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    column content
+                <div class="col-md-3 col-sm-6 social">
+                    <ul>
+                        <li><a href="">x</a></li>
+                        <li><a href="">x</a></li>
+                        <li><a href="">x</a></li>
+                        <li><a href="">x</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
