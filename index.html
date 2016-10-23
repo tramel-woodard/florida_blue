@@ -38,11 +38,38 @@
             /* BOTTOM NAVIGATION */
             .container_bottom {
                 background: #004766;
-                color: #FFF;
-                font-size: .9em;
+                color: #D1E7EE;
+                font-size: .88em;
             }
             .row_bottom {
                 margin: 30px auto;
+                padding: 0px 18px;
+            }
+            .row_bottom p {
+                line-height: 1.75em;
+                margin-bottom: 20px;
+            }
+            .row_bottom a {
+                color: #FFF;
+                text-decoration: underline;
+            }
+            .row_bottom a:hover {
+                text-decoration: none;
+            }
+            .left {
+                padding-left: 0px;
+            }
+            .right {
+                padding-right: 0px;
+                text-align: right;
+            }
+            .bottom_masthead {
+                padding-bottom: 50px;
+                border-bottom: solid 1px #FFF;
+                margin-bottom: 20px;
+            }
+            .bottom_fb_icon {
+                width: 285px;
             }
         </style>
     </head>
@@ -64,15 +91,20 @@
         </div>
         <div class="container-fluid container_bottom">
             <div class="row row_max_width row_bottom">
-                <div class="row">
-                    icons and privacy statement
+                <div class="row bottom_masthead">
+                    <div class="col-md-6 col-xs-12 left">
+                        <img src="img/fb_icon.png" class="bottom_fb_icon" />
+                    </div>
+                    <div class="col-md-6 col-xs-12 right">
+                        <a href="">Internet Privacy Statement</a> | <a href="">Terms of Use</a>
+                    </div>
                 </div>
                 <div class="row">
                     <p>
-                        We comply with applicable Federal civil rights laws and do not discriminate on the basis of race, color, national origin, age, disability or sex. You may access the Nondiscrimination and Accessibility notice here.
+                        We comply with applicable Federal civil rights laws and do not discriminate on the basis of race, color, national origin, age, disability or sex. You may access the Nondiscrimination and Accessibility notice <a href="">here</a>.
                     </p>
                     <p>
-                        Language assistance available: Español, Kreyol Ayisien, Tiếng Việt, Português, 中文, français, Tagalog, русский, العربية, italiano, Deutsche , 한국어, Polskie, Gujarati, ไทย, 日本語, فارسی
+                        Language assistance available: <a href="">Español</a>, <a href="">Kreyol Ayisien</a>, <a href="">Tiếng Việt</a>, <a href="">Português</a>, <a href="">中文</a>, <a href="">français</a>, <a href="">Tagalog</a>, <a href="">русский</a>, <a href="">لعربية,</a>, <a href="">italiano</a>, <a href="">Deutsche</a>, <a href="">한국어</a>, <a href="">Polskie</a>, <a href="">Gujarati</a>, <a href="">ไทย</a>, <a href="">日本語</a>, <a href="">فارسی</a>
                     </p>
                     <p>
                         Generally, the pronouns "our," "we" and "us" used throughout this website are intended to refer collectively to Blue Cross and Blue Shield of Florida, Inc. and its subsidiaries and affiliates. However, where appropriate, the content may identify a particular company; there, any pronouns refer to that specific entity.
@@ -82,7 +114,12 @@
                     </p>
                 </div>
                 <div class="row">
-                    fb content and copyright
+                    <p class="col-md-6 col-xs-12 left">
+                        FB MFT 001 NF 092016
+                    </p>
+                    <p class="col-md-6 col-sx-12 pull-right right">
+                        &copy; 2016 Blue Cross and Blue Shield of Florida, Inc. DBA Florida Blue. All Rights reserved.
+                    </p>
                 </div>
             </div>
         </div>
