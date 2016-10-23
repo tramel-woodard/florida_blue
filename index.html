@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Tramel's Florida Blue Demo</title>
+        <!-- jQuery (for Bootstrap and DOM manipulation) -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Google Front (global) 'Open Sans' -->
@@ -48,17 +50,31 @@
                 display: inline-block;
                 float: left;
             }
+            .member_dropdown_click:hover {
+                cursor: pointer;
+            }
             .container_corporate .members_dropdown {
+                display: none;
+                position: absolute;
                 background: #FFF;
                 width: 350px;
                 padding: 30px 30px 20px 5px;
                 border: 1px solid #CCCCCC;
+                margin: 5px 0px 0px 0px;
+                z-index: 10;
+            }
+            .container_corporate .members_dropdown_show {
+                display: block;
             }
             .members_dropdown li {
                 display: block;
             }
             .members_dropdown li:nth-child(2) {
                 border-bottom: 1px solid #EDEDED;
+            }
+            .member_dropdown_frame {
+                position: relative;
+                display: inline-block;
             }
             .members_dropdown .title {
                 color: #00324E;
@@ -85,6 +101,9 @@
             .corporate_tools {
                 display: inline-block;
                 float: right;
+            }
+            .red {
+                background-color: red;
             }
             /* COMMENTING OUT BOOTSTRAP-SPECIFIC STYLINGS
             .navbar .navbar-nav {
@@ -182,10 +201,10 @@
     </head>
     <body>
         <div class="container-fluid container_corporate">
-            <div class="row row_max_width">
+            <div class="row row_max_width row_corporate">
                 <ul class="corporate_menu">
                     <li><a href="" class="active">Home</a></li>
-                    <li><a href="">Members <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                    <li class="member_dropdown_frame"><a class="member_dropdown_click">Members <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
                     <li><a href="">Employers</a></li>
                     <li><a href="">Agents</a></li>
                     <li><a href="">Providers</a></li>
@@ -317,5 +336,14 @@
                 </div>
             </div>
         </div>
+        <!-- jQuery code after document is ready -->
+        <script>
+            $(document).ready(function() {
+                $('.member_dropdown_frame').append($('.members_dropdown'));
+                $('.member_dropdown_click').click(function() {
+                    $('.members_dropdown').toggleClass('members_dropdown_show');
+                });
+            });
+        </script>
     </body>
 </html>
