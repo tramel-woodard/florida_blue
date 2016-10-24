@@ -159,6 +159,104 @@
                 font-size: 1.4em;
                 margin-right: 2px;
             }
+            /* NEW MEMBER CONTAINER */
+            .container_newmember {
+                background: #B056BC;
+                color: #FFF;
+            }
+            .row_newmember {
+                margin: 25px auto;
+            }
+            .newmember_platform, .newmember_learnmore {
+                vertical-align: middle;
+            }
+            .newmember_platform {
+                float: left;
+            }
+            .newmember_platform .title {
+                font-size: 1.7em;
+            }
+            .newmember_platform .subtitle {
+                font-size: 1.55em;
+            }
+            .newmember_learnmore {
+                float: right;
+            }
+            .newmember_learnmore button {
+                background: none;
+                color: #FFF;
+                font-size: 1.2em;
+                padding: 5px 25px 10px;
+                border: 2px solid #FFF;
+                border-radius: 5px;
+            }
+            .newmember_learnmore button:hover {
+                background: #6e3088;
+                border-color: #6e3088;
+            }
+            .newmember_learnmore button i {
+                font-size: 1.6em;
+                margin-right: 5px;
+            }
+            /* CENTERS CONTAINER */
+            .row_centers {
+                margin-bottom: 40px;
+                overflow: auto;
+            }
+            .centers_badge {
+                background: red;
+                width: 38%;
+                margin-right: 2%;
+                float: left;
+            }
+            .centers_badge img {
+                width: 100%;
+            }
+            .centers_platform {
+                width: 58%;
+                float: right;
+            }
+            .centers_platform .tag {
+                color: #000;
+                font-size: 1.4em;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .centers_platform .title {
+                color: #0F5499;
+                font-size: 3em;
+            }
+            .centers_platform .description {
+                color: #77848D;
+                font-size: 1.3em;
+                font-weight: 300;
+                line-height: 1.8em;
+            }
+            .centers_button_closest, .centers_button_viewall {
+                font-size: 1.3em;
+                font-weight: 300;
+                padding: 10px 25px;
+            }
+            .centers_button_closest {
+                background: #1477D7;
+                color: #FFF;
+                border: none;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            .centers_button_closest:hover {
+                background: #0E5397;
+            }
+            .centers_button_viewall {
+                background: #FFF;
+                color: #1477D7;
+                border-radius: 5px;
+                border: 2px solid #0F5499;
+            }
+            .centers_button_viewall:hover {
+                background: #0F5499;
+                color: #FFF;
+            }
             /* WHAT'S NEW CONTAINER */
             .row_whatsnew {
                 color: #77848C;
@@ -495,8 +593,39 @@
                 </button>
             </div>
         </div>
+        <div class="container-fluid container_newmember">
+            <div class="row row_max_width row_newmember">
+                <div class="newmember_platform">
+                    <p class="title">
+                        Are you a new Florida Blue member?
+                    </p>
+                    <p class="subtitle">
+                        Let us help you maximize your benefits in just a few steps.
+                    </p>
+                </div>
+                <div class="newmember_learnmore">
+                    <button><i class="fa fa-angle-right" aria-hidden="true"></i> Learn More</button>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid container_home">
             <div class="row row_max_width row_home">
+                <div class="row_max_width row_centers">
+                    <div class="centers_badge">
+                        <img src="img/centers_badge.jpg" />
+                    </div>
+                    <div class="centers_platform">
+                        <p class="tag">Let our experts help you.</p>
+                        <p class="title">Florida Blue Centers in Your Community</p>
+                        <p class="description">
+                            Florida Blue Centers are designed with you in mind. With health screenings, health fairs, guest speakers, fitness classes and more, you'll find what you need in your pursuit of health.
+                        </p>
+                        <p class="centers_buttons">
+                            <button class="centers_button_closest">View My Closest Center</button>
+                            <button class="centers_button_viewall">View All Centers</button>
+                        </p>
+                    </div>
+                </div>
                 <div class="row_max_width row_whatsnew">
                     <div class="whatsnew_title">
                         <i class="fa fa-newspaper-o" aria-hidden="true"></i> What's New?
