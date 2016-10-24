@@ -19,7 +19,6 @@
             .row_max_width {
                 max-width: 1000px;
                 margin: 0 auto;
-                overflow: auto;
             }
             /* CORPORATE NAVIGATION */
             .container_corporate {
@@ -103,9 +102,6 @@
                 display: inline-block;
                 float: right;
             }
-            .red {
-                background-color: red;
-            }
             /* COMMENTING OUT BOOTSTRAP-SPECIFIC STYLINGS
             .navbar .navbar-nav {
                 display: inline-block;
@@ -163,6 +159,95 @@
                 font-size: 1.4em;
                 margin-right: 2px;
             }
+            /* WHAT'S NEW CONTAINER */
+            .row_whatsnew {
+                color: #77848C;
+                margin-bottom: 40px;
+                overflow: auto;
+            }
+            .row_whatsnew .whatsnew_readmore {
+                color: #1477D7;
+                font-size: 1.2em;
+            }
+            .row_whatsnew .whatsnew_readmore:hover {
+                text-decoration: none;
+            }
+            .row_whatsnew .whatsnew_readmore i {
+                margin-left: 5px;
+            }
+            .whatsnew_title {
+                display: block;
+                color: #0F5499;
+                font-size: 2.8em;
+                margin-bottom: 20px;
+            }
+            .whatsnew_main, .whatsnew_article {
+                width: 47%;
+            }
+            .whatsnew_article .frame {
+                overflow: auto;
+            }
+            .whatsnew_article .frame:nth-child(1) {
+                padding-bottom: 30px;
+                border-bottom: 1px solid #E5E3E0;
+                margin-bottom: 30px;
+            }
+            .whatsnew_main {
+                padding-left: 20px;
+                float: left;
+            }
+            .whatsnew_main img {
+                width: 100%;
+                margin-bottom: 12px;
+            }
+            .whatsnew_main .title {
+                color: #16445D;
+                font-size: 1.6em;
+                line-height: 1.6em;
+            }
+            .whatsnew_main .date {
+                font-size: 1.3em;
+                font-weight: 300;
+                margin-bottom: 25px;
+            }
+            .whatsnew_main .description {
+                font-size: 1.25em;
+                font-weight: 300;
+                line-height: 1.5em;
+                margin-bottom: 20px;
+            }
+            .whatsnew_article {
+                padding-right: 20px;
+                float: right;
+            }
+            .whatsnew_article_platform {
+                width: 30%;
+                margin-right: 8%;
+                float: left;
+            }
+            .whatsnew_article_platform img {
+                width: 100%;
+            }
+            .whatsnew_article_detail {
+                width: 62%;
+                float: right;
+            }
+            .whatsnew_article_detail .title {
+                color: #16445D;
+                font-size: 1.6em;
+                line-height: 1.6em;
+            }
+            .whatsnew_article_detail .date {
+                font-size: 1.3em;
+                font-weight: 300;
+                margin-bottom: 25px;
+            }
+            .whatsnew_article_detail .description {
+                font-size: 1.25em;
+                font-weight: 300;
+                line-height: 1.5em;
+                margin-bottom: 20px;
+            }
             /* HOME CONTAINER */
             .container_home {
                 background: #FFF;
@@ -176,6 +261,7 @@
             }
             .row_chooseplan {
                 margin-bottom: 20px;
+                overflow: auto;
             }
             .home_chooseplan_find {
                  float: left;
@@ -187,7 +273,7 @@
                 width: 100%;
             }
             .home_chooseplan_find, .home_chooseplan_manage {
-                width: 48%;
+                width: 48.5%;
             }
             .home_chooseplan_find p, .home_chooseplan_manage p {
                 text-align: center;
@@ -309,6 +395,7 @@
             .row_bottom {
                 margin: 30px auto;
                 padding: 0px 18px;
+                overflow: auto;
             }
             .row_bottom p {
                 line-height: 1.75em;
@@ -410,6 +497,51 @@
         </div>
         <div class="container-fluid container_home">
             <div class="row row_max_width row_home">
+                <div class="row_max_width row_whatsnew">
+                    <div class="whatsnew_title">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i> What's New?
+                    </div>
+                    <div class="whatsnew_main">
+                        <img src="img/whatsnew_readthis.png" />
+                        <p class="title">Some Marketplace plans closing in Florida at the end of this year</p>
+                        <p class="date">October 12, 2016</p>
+                        <p class="description">
+                            Big changes are coming to MarketplaceSM (Obamacare) plans in Florida. On December 31, 2016, UnitedHealthcare and Aetna/Coventry are closing their Marketplace plans, and Humana is closing its Marketplace plans in six counties: Polk, Lake, Osceola, Seminole, Orange and Charlotte.
+                        </p>
+                        <a href="" class="whatsnew_readmore">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="whatsnew_article">
+                        <div class="frame">
+                            <div class="whatsnew_article_platform">
+                                <img src="img/whatsnew_article_enrollment.jpg" />
+                            </div>
+                            <div class="whatsnew_article_detail">
+                                <p class="title">
+                                    Get Ready for 2017 Open Enrollment
+                                </p>
+                                <p class="date">October 23, 2016</p>
+                                <p class="description">
+                                    <strong>Get Ready for 2017 Open Enrollment</strong> It's that time...
+                                </p>
+                                <a href="" class="whatsnew_readmore">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="frame">
+                            <div class="whatsnew_article_platform">
+                                <img src="img/whatsnew_article_pumpkinpie.png" />
+                            </div>
+                            <div class="whatsnew_article_detail">
+                                <p class="title">Pumpkin Pie Dip</p>
+                                <p class="date">October 20, 2016</p>
+                                <p class="description">
+                                    Usher in fall with this holiday favorite ingredient!<br/><br/>
+                                    Serve this crowd-pleaser as an appetizer...
+                                </p>
+                                <a href="" class="whatsnew_readmore">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row_max_width row_chooseplan">
                     <div class="home_chooseplan_find">
                         <img src="img/home_chooseplan_find.jpg" />
@@ -429,13 +561,13 @@
                     </div>
                 </div>
                 <div class="row_max_width">
-                <p>
-                    Our Medicare Supplement insurance policies are not connected with or endorsed by the U.S. Government or the Federal Medicare Program. These policies have limitations and exclusions.
-                </p>
-                <p>
-                    Florida Blue is a trade name of Blue Cross and Blue Shield of Florida, Inc., an Independent Licensee of the Blue Cross and Blue Shield Association.
-                </p>
-                <p>FB HM F 052016</p>
+                    <p>
+                        Our Medicare Supplement insurance policies are not connected with or endorsed by the U.S. Government or the Federal Medicare Program. These policies have limitations and exclusions.
+                    </p>
+                    <p>
+                        Florida Blue is a trade name of Blue Cross and Blue Shield of Florida, Inc., an Independent Licensee of the Blue Cross and Blue Shield Association.
+                    </p>
+                    <p>FB HM F 052016</p>
                 </div>
                 <a href="#top" class="home_backtotop">Back to Top</a>
             </div>
