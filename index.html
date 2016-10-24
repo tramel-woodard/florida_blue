@@ -114,7 +114,62 @@
 
             /* TOP NAVIGATION */
             .container_top {
-                font-size: 1.1em;
+                font-size: 1.12em;
+            }
+            .row_top {
+                margin: 15px auto;
+            }
+            .top_menu, .top_login {
+                vertical-align: middle;
+            }
+            .top_menu {
+                padding-left: 0px;
+                margin-bottom: 0px;
+                float: left;
+            }
+            .top_menu li {
+                display: inline-block;
+                margin-right: 25px;
+            }
+            .top_menu li.icon {
+                margin-right: 30px;
+            }
+            .top_menu img {
+                height: 28px;
+            }
+            .top_menu a {
+                color: #1477D7;
+                text-decoration: none;
+            }
+            .top_menu a:hover {
+                text-decoration: none;
+            }
+            .top_login {
+                background: #249721;
+                color: #FFF;
+                font-size: .75em;
+                padding: 10px 22px;
+                display: inline-block;
+                float: right;
+                border: 1px solid #249721;
+                border-radius: 8px;
+            }
+            .top_login:hover {
+                background: #196a17;
+                border: 1px solid #196a17;
+            }
+            .top_login i {
+                font-size: 1.4em;
+                margin-right: 2px;
+            }
+            /* HOME CONTAINER */
+            .container_home {
+                background: #FFF;
+                color: #A3A3A3;
+                font-size: 12px;
+            }
+            .row_home {
+                margin: 25px auto;
             }
             /* ACTION CONTAINER */
             .container_action {
@@ -257,9 +312,20 @@
             </div>
         </nav> -->
         <div class="container-fluid container_top">
-            <div class="row row_max_width">
-                top navigation content
+            <div class="row row_max_width row_top">
+                <ul class="top_menu">
+                    <li class="icon"><img src="img/fb_icon_top.png"</li>
+                    <li><a href="">Find a Plan</a></li>
+                    <li><a href="">Find a Doctor</a></li>
+                    <li><a href="">Find a Location</a></li>
+                </ul>
+                <button class="top_login">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i> Log in
+                </button>
             </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
         </div>
         <div class="container-fluid container_action">
             <div class="row row_max_width row_action">
