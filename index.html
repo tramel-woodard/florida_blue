@@ -19,6 +19,7 @@
             .row_max_width {
                 max-width: 1000px;
                 margin: 0 auto;
+                overflow: auto;
             }
             /* CORPORATE NAVIGATION */
             .container_corporate {
@@ -169,7 +170,90 @@
                 font-size: 12px;
             }
             .row_home {
-                margin: 25px auto;
+                margin: 25px auto 0px;
+                padding-bottom: 45px;
+                position: relative;
+            }
+            .row_chooseplan {
+                margin-bottom: 20px;
+            }
+            .home_chooseplan_find {
+                 float: left;
+            }
+            .home_chooseplan_manage {
+                float: right;
+            }
+            .home_chooseplan_find img, .home_chooseplan_manage img {
+                width: 100%;
+            }
+            .home_chooseplan_find, .home_chooseplan_manage {
+                width: 48%;
+            }
+            .home_chooseplan_find p, .home_chooseplan_manage p {
+                text-align: center;
+                padding-top: 30px;
+            }
+            .home_chooseplan_find span, .home_chooseplan_manage span {
+                display: block;
+            }
+            .home_chooseplan_find p .title, .home_chooseplan_manage p .title {
+                font-size: 1.4em;
+                margin-bottom: 13px;
+            }
+            .home_chooseplan_find .description, .home_chooseplan_manage .description {
+                font-size: 1.2em;
+                margin-bottom: 40px;
+            }
+            .home_chooseplan_find p {
+                background: #F4F3F2;
+                color: #585757;
+            }
+            .home_chooseplan_find button, .home_chooseplan_manage button {
+                color: #FFF;
+                font-size: 1.25em;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .home_chooseplan_find button {
+                background: #249721;
+            }
+            .home_chooseplan_manage p {
+                background: #043b61; /* Old browsers */
+                background: -moz-linear-gradient(-45deg,  #043b61 1%, #0f5499 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(-45deg,  #043b61 1%,#0f5499 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(135deg,  #043b61 1%,#0f5499 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#043b61', endColorstr='#0f5499',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                color: #FFF;
+            }
+            .home_chooseplan_manage button {
+                background: #00324E;
+            }
+            .home_chooseplan_manage button:hover {
+                background: #004268;
+            }
+            .home_chooseplan_find button:hover {
+                background: #196A17;
+            }
+            .home_backtotop, .home_backtotop:focus {
+                display: block;
+                background: #1477D7;
+                color: #FFF;
+                font-size: 1.4em;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            .home_backtotop:hover {
+                background: #0E5397;
+                color: #FFF;
+                text-decoration: none;
             }
             /* ACTION CONTAINER */
             .container_action {
@@ -255,7 +339,7 @@
         </style>
     </head>
     <body>
-        <div class="container-fluid container_corporate">
+        <div class="container-fluid container_corporate" name="top">
             <div class="row row_max_width row_corporate">
                 <ul class="corporate_menu">
                     <li><a href="" class="active">Home</a></li>
@@ -326,6 +410,25 @@
         </div>
         <div class="container-fluid container_home">
             <div class="row row_max_width row_home">
+                <div class="row_max_width row_chooseplan">
+                    <div class="home_chooseplan_find">
+                        <img src="img/home_chooseplan_find.jpg" />
+                        <p>
+                            <span class="title">Individuals &amp; Families</span>
+                            <span class="description">The right plan for you is just a few simple steps away.</span>
+                            <button><i class="fa fa-arrow-right" aria-hidden="true"></i> Find a Plan</button>
+                        </p>
+                    </div>
+                    <div class="home_chooseplan_manage">
+                        <img src="img/home_chooseplan_manage.jpg" />
+                        <p>
+                            <span class="title">Already a Member?</span>
+                            <span class="description">Manage your plan online.</span>
+                            <button><i class="fa fa-sign-in" aria-hidden="true"></i> Access Your Account</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="row_max_width">
                 <p>
                     Our Medicare Supplement insurance policies are not connected with or endorsed by the U.S. Government or the Federal Medicare Program. These policies have limitations and exclusions.
                 </p>
@@ -333,6 +436,8 @@
                     Florida Blue is a trade name of Blue Cross and Blue Shield of Florida, Inc., an Independent Licensee of the Blue Cross and Blue Shield Association.
                 </p>
                 <p>FB HM F 052016</p>
+                </div>
+                <a href="#top" class="home_backtotop">Back to Top</a>
             </div>
         </div>
         <div class="container-fluid container_action">
